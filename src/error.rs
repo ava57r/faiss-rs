@@ -20,6 +20,8 @@ pub enum Error {
     IndexDescription,
     /// Invalid file path.
     BadFilePath,
+    /// The number of GPU resources and devices do not match.
+    GpuResourcesMatch,
 }
 
 impl fmt::Display for Error {
