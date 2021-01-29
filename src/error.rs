@@ -31,6 +31,7 @@ impl fmt::Display for Error {
             Error::BadCast => fmt.write_str("Invalid index type cast"),
             Error::IndexDescription => fmt.write_str("Invalid index description"),
             Error::BadFilePath => fmt.write_str("Invalid file path"),
+            Error::GpuResourcesMatch => fmt.write_str("Number of GPU resources and devices do not match"),
         }
     }
 }
